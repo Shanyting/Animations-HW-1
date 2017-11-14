@@ -1,0 +1,61 @@
+/*Made by Shantelle Toh on 11/13/17 for Web Development.*/
+div {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+p {
+  font-family: papyrus;
+}
+
+#box1, #box3 {
+  background-color: turquoise;
+  transition: 1s;
+}
+
+#box2 {
+  background-color: skyblue;
+  transition: 1s;}
+
+#box4 {
+  background-color: turquoise;
+  transition: 1s;
+  animation: box_four 2s infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#my-input {
+  border-radius: 5px;
+  width: 300px;
+  height: 30px;
+  z-index: 0;
+  position: absolute;
+  top: 10px;
+  left: 130px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.move-up-down {
+  margin-top: 100px;
+}
+
+.move-diagonally {
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.change-size {
+  width: 200px;
+  height: 200px;
+}
+
+@keyframes box_four {
+  20% {background-color: skyblue; margin-left: 100px;}
+  40% {background-color: teal; margin-top: 100px;}
+  60% {background-color: blue; margin-right: 100px;}
+  80% {background-color: darkblue; margin-bottom: 100px;}
+}
